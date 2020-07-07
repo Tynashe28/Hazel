@@ -2,10 +2,15 @@
   "name": "hazel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^2.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
 }
