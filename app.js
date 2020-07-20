@@ -1,13 +1,13 @@
 let port = process.env.PORT || 3000;
 const express = require('express');
 const app = express();
-const tf = require('@tensorflow/tfjs-node');
-require('C:\\Users\\blackCode\\Documents\\Projects\\Hazel\\node_modules\\@tensorflow\\tfjs');
+const tf = require('@tensorflow/tfjs');
+
 
 const n_layers = 3;
 const learning_rate = 0.5;
 const results = [];
-const n_epochs = 1;
+const n_epochs = 50;
 const window_size =140;
 let inputs = 0;
 let outputs = 0;
@@ -122,11 +122,11 @@ async function trn(){
             }
         }
     });
-    await myModel.save('file://my-model');
+    //await myModel.save('file://my-model');
     console.log(resu);
 }
 trn().then(()=>{
-    console.log("done training");
+    console.log("done training");~
     console.log("{Output Tensor: [350]}");
 })
 
